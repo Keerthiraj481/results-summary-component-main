@@ -1,75 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="box">
-        <div class="box-one">
-          <p class="result">Your Result</p>
-            <div class="out-of">
-              <h1 class="marks">76</h1>
-              <p class="full-marks">of 100</p>
-            </div>
-          <h3 class="great">Great</h3>
-          <p class="comments-one">
-            You scored higher than 65% of 
-          </p>
-          <p class="comments-two">
-            the people who have taken
-          </p>
-          <p class="comments-three">
-            these tests.
-          </p>
-        </div>
-        <div class="box-two">
-          <h4 class="summary">Summary</h4>
-          <div class="head-reaction">
-            <div class="reaction">
-              <img
-                src="./assets/images/icon-reaction.svg"
-                alt="80"
-                class="reaction-emoji" 
-              />
-              <p class="reaction-w">Reaction</p>
-              <p class="mark-one">80 / 100</p>
-            </div>
-          </div>
-          <div class="memory">
-            <img
-              src="./assets/images/icon-memory.svg"
-              alt="92"
-              class="memory-emoji"
-            />
-            <p class="memory-w">Memory</p>
-            <p class="mark-two">92 / 100</p>
-          </div>
-          <div class="verbal">
-            <img
-              src="./assets/images/icon-verbal.svg"
-              alt="61"
-              class="verbal-emoji"
-            />
-            <p class="verbal-w">Verbal</p>
-            <p class="mark-three">61 / 100</p>
-          </div>
-          <div class="visual">
-            <img
-              src="./assets/images/icon-visual.svg"
-              alt="72"
-              class="visual-emoji"
-            />
-            <p class="visual-w">Visual</p>
-            <p class="mark-four">72 / 100</p>
-          </div>
-          <button class="continue">Continue</button>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./app.js" defer></script>
+  <title>Results summary component | Frontend Mentor</title>
+</head>
+<body>
+  <main>
+    <section class="result">
+      <h1 class="result__heading">Your Result</h1>
+      <div class="result__score">
+        <span class="result__score-point">76</span>
+        <span class="result__score-of">of 100</span>
       </div>
-      </div>
-      
-  </body>
+      <h2 class="result__subheading">Great</h2>
+      <p class="result__text">You scored higher than <span class="result__text-higher">65</span>% of the people who have taken these tests.</span>
+    </section>
+    <section class="summary">
+      <h2 class="summary__heading">Summary</h2>
+      <ul class="summary__list"></ul>
+      <button type="button" onclick="location.reload()">Continue</button>
+    </section>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="https://aquamarine-centaur-9228d6.netlify.app" target="_blank" rel="noopener">Keerthiraj</a>.
+  </footer>
+</body>
 </html>
